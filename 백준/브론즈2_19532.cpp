@@ -13,4 +13,4 @@ int main() {
 	}
 }
 //https://www.acmicpc.net/problem/19532
-//19532¹ø: ¼öÇÐÀº ºñ´ë¸é°­ÀÇÀÔ´Ï´Ù
+//19532ë²ˆ: ìˆ˜í•™ì€ ë¹„ëŒ€ë©´ê°•ì˜ìž…ë‹ˆë‹¤
