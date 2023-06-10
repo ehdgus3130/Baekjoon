@@ -6,10 +6,10 @@ using namespace std;
 void compress(vector<int> a) {
 	vector<int>b = a;
 	sort(b.begin() , b.end());
-	b.erase(unique(b.begin(), b.end()), b.end());	//unique ¿¬¼ÓµÈ ÀÎµ¦½º¸¦ ¾ø¾ÖÁÖ´Â ¿ëµµ
+	b.erase(unique(b.begin(), b.end()), b.end());	//unique ì—°ì†ëœ ì¸ë±ìŠ¤ë¥¼ ì—†ì• ì£¼ëŠ” ìš©ë„
 	for (int i = 0; i < a.size(); i++)
 		cout << lower_bound(b.begin(), b.end(), a[i]) - b.begin() << " ";
-}		//a[i]¿Í °°°Å³ª Å« Ã¹ ¼öÀÇ ÁÖ¼Ò°ª ¹İÈ¯
+}		//a[i]ì™€ ê°™ê±°ë‚˜ í° ì²« ìˆ˜ì˜ ì£¼ì†Œê°’ ë°˜í™˜
 
 int main() {
 	cin.tie(0);
