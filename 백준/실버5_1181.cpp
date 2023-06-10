@@ -27,12 +27,12 @@ int main() {
 				pos = j;
 			}
 			else if (min == arr[j].size()) {
-				if (cur == arr[j]) {	//°°Àº ³»¿ëÁßº¹
+				if (cur == arr[j]) {	//ê°™ì€ ë‚´ìš©ì¤‘ë³µ
 					arr.erase(arr.begin() + j);
 					continue;
 				}
 				else {
-					if (cur < arr[j]) {		//»çÀü¼øÀ¸·Î curÀÌ ´õ ¾Õ¼­³Ä?
+					if (cur < arr[j]) {		//ì‚¬ì „ìˆœìœ¼ë¡œ curì´ ë” ì•ì„œëƒ?
 						continue;
 					}
 					else {
@@ -56,17 +56,17 @@ int main() {
 using namespace std;
 
 int cmp(string a, string b) {
-	// 1. ±æÀÌ°¡ °°´Ù¸é, »çÀü¼øÀ¸·Î
+	// 1. ê¸¸ì´ê°€ ê°™ë‹¤ë©´, ì‚¬ì „ìˆœìœ¼ë¡œ
 	if (a.length() == b.length()) {
 		return a < b;
 	}
-	// 2. ±æÀÌ°¡ ´Ù¸£´Ù¸é, ÂªÀº ¼øÀ¸·Î
+	// 2. ê¸¸ì´ê°€ ë‹¤ë¥´ë‹¤ë©´, ì§§ì€ ìˆœìœ¼ë¡œ
 	else {
 		return a.length() < b.length();
 	}
 }
 
-// ¹üÀ§°¡ Å©±â¶§¹®¿¡ Àü¿ªº¯¼ö·Î ¼³Á¤
+// ë²”ìœ„ê°€ í¬ê¸°ë•Œë¬¸ì— ì „ì—­ë³€ìˆ˜ë¡œ ì„¤ì •
 string word[20000];
 
 int main() {
@@ -80,7 +80,7 @@ int main() {
 	sort(word, word + N, cmp);
 
 	for (int i = 0; i < N; i++) {
-		// Áßº¹µÈ °æ¿ì ÇÑ¹ø¸¸ Ãâ·Â
+		// ì¤‘ë³µëœ ê²½ìš° í•œë²ˆë§Œ ì¶œë ¥
 		if (word[i] == word[i - 1]) {
 			continue;
 		}
